@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../web/css/general.css">
+</head>
+
+<body class="page-contact-us">
+    <header>
+        <nav class="nav-container">
+            <ul class="nav-list-container">
+                <li class="nav-list-container__item">
+                    <a class="nav-list-container__lnk --blue-text --hover-white-text" href="./construccion.html">
+                        <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
+                            height="30">
+                        <span>Construcción</span>
+                    </a>
+                </li>
+                <li class="nav-list-container__item">
+                    <a class="nav-list-container__lnk --blue-text --hover-white-text" href="./artistica.html">
+                        <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
+                            height="30">
+                        <span>Artística</span>
+                    </a>
+                </li>
+                <li class="nav-list-container__item">
+                    <img class="nav-list-container__logo" src="../web/images/logo-welder-corp.png" alt="logo"
+                        width="100" height="100">
+                </li>
+                <li class="nav-list-container__item">
+                    <a class="nav-list-container__lnk --blue-text --hover-white-text" href="./nosotros.html">
+                        <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
+                            height="30">
+                        <span>Nosotros</span>
+                    </a>
+                </li>
+                <li class="nav-list-container__item">
+                    <a class="nav-list-container__lnk --blue-text --hover-white-text --current" href="./contacto.html">
+                        <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
+                            height="30">
+                        <span>Contacto</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <div class="main-slider">
+            <img src="../web/images/main-slider.jpg" alt="" height="900">
+            <div class="main-slider-text center">
+                <div class="main-slider-title box-blue">
+                    <h1>CONTACTO</h1>
+                    <span class="main-slider-text__texts">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                        odit
+                        aut </span>
+                </div>
+            </div>
+        </div>
+        <div class="contact-main-container --full-width">
+            <div class="contact-container box-pink">
+                <form id="form_contact" action="#" method="POST" enctype="multipart/form-data">
+                    <div class="field-contact --name">
+                        <label for="name">Nombre:</label>
+                        <input id="txt_name" name="name" type="text" value="" />
+                    </div>
+                    <div class="field-contact --email">
+                        <label for="email">Email:</label>
+                        <input id="txt_email" name="email" type="email" value="" />
+                    </div>
+                    <div class="field-contact --phone">
+                        <label for="phone">Teléfono:</label>
+                        <input id="txt_phone" name="phone" type="number" value="" />
+                    </div>
+                    <div class="field-contact --reason">
+                        <label for="reason">Motivo:</label>
+                        <select id="slc_reason" name="reason">
+                            <option value="1">Motivo 1</option>
+                            <option value="2">Motivo 2</option>
+                            <option value="3">Motivo 3</option>
+                        </select><br />
+                    </div>
+                    <div class="field-contact --message">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="txt_message" name="message" rows="7" cols="30"></textarea><br />
+                    </div>
+                    <input id="btn_contacto" class="btn" type="submit" value="Enviar" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-links footer-container">
+            <ul class="nav-list-container">
+                <li class="nav-list-container__item">
+                    <a class="nav-list-container__lnk --white-text --hover-blue-text" href="./construccion.html"
+                        target="_blank">Construcción</a>
+                </li>
+                <li class="nav-list-container__item">
+                    <a class="nav-list-container__lnk --white-text --hover-blue-text" href="./artistica.html"
+                        target="_blank">Artística</a>
+                </li>
+                <li class="nav-list-container__item __logo">
+                    <img class="footer-links__logo" src="../web/images/logo-welder-corp.png" alt="logo" width="90"
+                        height="90">
+                </li>
+                <li class="nav-list-container__item">
+                    <a class="nav-list-container__lnk --white-text --hover-pink-text" href="./nosotros.html"
+                        target="_blank">Nosotros</a>
+                </li>
+                <li class="nav-list-container__item">
+                    <a class="nav-list-container__lnk --white-text --hover-pink-text" href="./contacto.html"
+                        target="_blank">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-links footer-container">
+            <ul class="nav-list-container">
+                <li class="nav-list-container__item">
+                    <a href="http://www.youtube.com/weldercorp" target="_blank">
+                        <i class="footer-social-links__ico ico-yt"></i>
+                    </a>
+                </li>
+                <li class="nav-list-container__item">
+                    <a href="http://www.tiktok.com/weldercorp" target="_blank">
+                        <i class="footer-social-links__ico ico-tt"></i>
+                    </a>
+                </li>
+                <li class="nav-list-container__item">
+                    <a href="http://www.instagram.com/weldercorp" target="_blank">
+                        <i class="footer-social-links__ico ico-ig"></i>
+                    </a>
+                </li>
+                <li class="nav-list-container__item">
+                    <a href="http://www.twitter.com/weldercorp" target="_blank">
+                        <i class="footer-social-links__ico ico-tw"></i>
+                    </a>
+                </li>
+                <li class="nav-list-container__item">
+                    <a href="http://www.facebook.com/weldercorp" target="_blank">
+                        <i class="footer-social-links__ico ico-fb"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-copyright footer-container">
+            <span>© Copyright 2022, Welfer Corp</span>
+        </div>
+    </footer>
+</body>
+
+</html>
