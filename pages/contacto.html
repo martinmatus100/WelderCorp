@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
@@ -13,6 +15,9 @@
 </head>
 
 <body class="page-contact-us">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <header>
         <nav class="nav-container">
             <ul class="nav-list-container">
@@ -53,42 +58,52 @@
     </header>
     <div class="main-container">
         <div class="main-slider">
-            <img src="../web/images/main-slider.jpg" alt="" height="900">
-            <div class="main-slider-text center">
-                <div class="main-slider-title box-blue">
-                    <h1>CONTACTO</h1>
-                    <span class="main-slider-text__texts">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                        odit
-                        aut </span>
+            <div id="carouselMainSlider4" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../web/images/main-slider.jpg" class="d-block w-100" alt="" height="900">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="main-slider-text left box-blue">
+                                <h1>CONTACTO</h1>
+                                <span class="main-slider-text__subtitle">Sed ut perspiciatis unde omnis</span>
+                                <span class="main-slider-text__texts">Nemo enim ipsam voluptatem quia voluptas sit
+                                    aspernatur aut odit
+                                    aut </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="contact-main-container --full-width">
             <div class="contact-container box-pink">
                 <form id="form_contact" action="#" method="POST" enctype="multipart/form-data">
-                    <div class="field-contact --name">
-                        <label for="name">Nombre:</label>
-                        <input id="txt_name" name="name" type="text" value="" />
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-name">Nombre</span>
+                        <input id="txt_name" name="name" type="text" class="form-control"
+                            aria-describedby="inputGroup-name">
                     </div>
-                    <div class="field-contact --email">
-                        <label for="email">Email:</label>
-                        <input id="txt_email" name="email" type="email" value="" />
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-email">Email</span>
+                        <input id="txt_email" name="email" type="email" class="form-control"
+                            aria-describedby="inputGroup-email">
                     </div>
-                    <div class="field-contact --phone">
-                        <label for="phone">Teléfono:</label>
-                        <input id="txt_phone" name="phone" type="number" value="" />
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-phone">Teléfono</span>
+                        <input id="txt_phone" name="phone" type="number" class="form-control"
+                            aria-describedby="inputGroup-phone">
                     </div>
-                    <div class="field-contact --reason">
-                        <label for="reason">Motivo:</label>
-                        <select id="slc_reason" name="reason">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="slc_reason">Motivo</label>
+                        <select class="form-select" id="slc_reason">
                             <option value="1">Motivo 1</option>
                             <option value="2">Motivo 2</option>
                             <option value="3">Motivo 3</option>
-                        </select><br />
+                        </select>
                     </div>
-                    <div class="field-contact --message">
-                        <label for="message">Mensaje:</label>
-                        <textarea id="txt_message" name="message" rows="7" cols="30"></textarea><br />
+                    <div class="input-group">
+                        <span class="input-group-text">Mensaje</span>
+                        <textarea id="txt_message" name="message" class="form-control" aria-label="Mensaje"></textarea>
                     </div>
                     <input id="btn_contacto" class="btn" type="submit" value="Enviar" />
                 </form>
