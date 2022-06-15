@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artística</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
@@ -17,8 +19,7 @@
         <nav class="nav-container">
             <ul class="nav-list-container">
                 <li class="nav-list-container__item">
-                    <a class="nav-list-container__lnk --blue-text --hover-white-text"
-                        href="./construccion.html">
+                    <a class="nav-list-container__lnk --blue-text --hover-white-text" href="./construccion.html">
                         <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
                             height="30">
                         <span>Construcción</span>
@@ -32,7 +33,8 @@
                     </a>
                 </li>
                 <li class="nav-list-container__item">
-                    <img class="nav-list-container__logo" src="../web/images/logo-welder-corp.png" alt="logo" width="100" height="100">
+                    <img class="nav-list-container__logo" src="../web/images/logo-welder-corp.png" alt="logo"
+                        width="100" height="100">
                 </li>
                 <li class="nav-list-container__item">
                     <a class="nav-list-container__lnk --blue-text --hover-white-text" href="./nosotros.html">
@@ -53,12 +55,63 @@
     </header>
     <div class="main-container">
         <div class="main-slider">
-            <img src="../web/images/main-slider.jpg" alt="" height="900">
-            <div class="main-slider-text left box-blue">
-                <h1>ARTÍSTICA</h1>
-                <span class="main-slider-text__subtitle">Sed ut perspiciatis unde omnis</span>
-                <span class="main-slider-text__texts">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                    aut </span>
+            <div id="carouselMainSlider2" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMainSlider2" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselMainSlider2" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselMainSlider2" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../web/images/main-slider.jpg" class="d-block w-100" alt="" height="900">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="main-slider-text left box-blue">
+                                <h1>ARTÍSTICA 1</h1>
+                                <span class="main-slider-text__subtitle">Sed ut perspiciatis unde omnis</span>
+                                <span class="main-slider-text__texts">Nemo enim ipsam voluptatem quia voluptas sit
+                                    aspernatur aut odit
+                                    aut </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../web/images/main-slider-2.jpg" class="d-block w-100" alt="" height="900">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="main-slider-text left box-blue">
+                                <h1>ARTÍSTICA 2</h1>
+                                <span class="main-slider-text__subtitle">Sed ut perspiciatis unde omnis</span>
+                                <span class="main-slider-text__texts">Nemo enim ipsam voluptatem quia voluptas sit
+                                    aspernatur aut odit
+                                    aut </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../web/images/main-slider-3.jpg" class="d-block w-100" alt="" height="900">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="main-slider-text left box-blue">
+                                <h1>ARTÍSTICA 3</h1>
+                                <span class="main-slider-text__subtitle">Sed ut perspiciatis unde omnis</span>
+                                <span class="main-slider-text__texts">Nemo enim ipsam voluptatem quia voluptas sit
+                                    aspernatur aut odit
+                                    aut </span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMainSlider2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMainSlider2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
         <h1>RECURSOS</h1>
@@ -119,7 +172,7 @@
                 <h2>LOREM IPSUM DOLOR SIT AMET</h2>
             </div>
             <div class="box-container-right --img box-blue">
-                <iframe  src="" frameborder="0"></iframe>
+                <iframe src="" frameborder="0"></iframe>
             </div>
         </div>
         <div class="masters-container --box-width">
@@ -214,6 +267,15 @@
             <span>© Copyright 2022, Welfer Corp</span>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

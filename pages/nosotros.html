@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
@@ -13,6 +15,9 @@
 </head>
 
 <body class="page-about-us">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <header>
         <nav class="nav-container">
             <ul class="nav-list-container">
@@ -53,11 +58,21 @@
     </header>
     <div class="main-container">
         <div class="main-slider">
-            <img src="../web/images/main-slider.jpg" alt="" height="900">
-            <div class="main-slider-text center box-white">
-                <h1>NOSOTROS</h1>
-                <span class="main-slider-text__texts">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                    aut </span>
+            <div id="carouselMainSlider4" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../web/images/main-slider.jpg" class="d-block w-100" alt="" height="900">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="main-slider-text left box-white">
+                                <h1>NOSOTROS 1</h1>
+                                <span class="main-slider-text__subtitle">Sed ut perspiciatis unde omnis</span>
+                                <span class="main-slider-text__texts">Nemo enim ipsam voluptatem quia voluptas sit
+                                    aspernatur aut odit
+                                    aut </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="map-container --box-width">
@@ -66,58 +81,68 @@
         </div>
         <div class="box-container --info --missions --box-width">
             <div class="box-container-left box-blue">
-                <h2>MISION</h2>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua.</span>
-                <ul class="box-container-info-list">
-                    <li class="box-container-info-list__item">
-                        <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
-                            height="30">
-                        <span>Sed ut perspiciatis unde omnis iste natus error sit voluptate</span>
-                    </li>
-                    <li class="box-container-info-list__item">
-                        <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
-                            height="30">
-                        <span>Sed ut perspiciatis unde omnis iste natus error sit voluptate</span>
-                    </li>
-                    <li class="box-container-info-list__item">
-                        <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
-                            height="30">
-                        <span>Sed ut perspiciatis unde omnis iste natus error sit voluptate</span>
-                    </li>
-                    <li class="box-container-info-list__item">
-                        <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
-                            height="30">
-                        <span>Sed ut perspiciatis unde omnis iste natus error sit voluptate</span>
-                    </li>
-                </ul>
+                <a class="btn btn-primary --btn-collapse" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    <h2>MISION</h2>
+                </a>
+                <div class="collapse" id="collapseExample">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</span>
+                    <ul class="box-container-info-list">
+                        <li class="box-container-info-list__item">
+                            <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
+                                height="30">
+                            <span>Sed ut perspiciatis unde omnis iste natus error sit voluptate</span>
+                        </li>
+                        <li class="box-container-info-list__item">
+                            <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
+                                height="30">
+                            <span>Sed ut perspiciatis unde omnis iste natus error sit voluptate</span>
+                        </li>
+                        <li class="box-container-info-list__item">
+                            <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
+                                height="30">
+                            <span>Sed ut perspiciatis unde omnis iste natus error sit voluptate</span>
+                        </li>
+                        <li class="box-container-info-list__item">
+                            <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
+                                height="30">
+                            <span>Sed ut perspiciatis unde omnis iste natus error sit voluptate</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="box-container-right box-pink">
-                <h2>COMPROMISO</h2>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua.</span>
-                <ul class="box-container-info-list">
-                    <li class="box-container-info-list__item">
-                        <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
-                            height="30">
-                        <span>Sed ut perspiciatis unde omnis iste natus error sit voluptate</span>
-                    </li>
-                    <li class="box-container-info-list__item">
-                        <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
-                            height="30">
-                        <span>Sed ut perspiciatis unde omnis iste natus error sit voluptate</span>
-                    </li>
-                    <li class="box-container-info-list__item">
-                        <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
-                            height="30">
-                        <span>Sed ut perspiciatis unde omnis iste natus error sit voluptate</span>
-                    </li>
-                    <li class="box-container-info-list__item">
-                        <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
-                            height="30">
-                        <span>Sed ut perspiciatis unde omnis iste natus error sit voluptate</span>
-                    </li>
-                </ul>
+                <a class="btn btn-primary --btn-collapse" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                    aria-expanded="false" aria-controls="collapseExample2">
+                    <h2>COMPROMISO</h2>
+                </a>
+                <div class="collapse" id="collapseExample2">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</span>
+                    <ul class="box-container-info-list">
+                        <li class="box-container-info-list__item">
+                            <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
+                                height="30">
+                            <span>Sed ut perspiciatis unde omnis iste natus error sit voluptate</span>
+                        </li>
+                        <li class="box-container-info-list__item">
+                            <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
+                                height="30">
+                            <span>Sed ut perspiciatis unde omnis iste natus error sit voluptate</span>
+                        </li>
+                        <li class="box-container-info-list__item">
+                            <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
+                                height="30">
+                            <span>Sed ut perspiciatis unde omnis iste natus error sit voluptate</span>
+                        </li>
+                        <li class="box-container-info-list__item">
+                            <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="30"
+                                height="30">
+                            <span>Sed ut perspiciatis unde omnis iste natus error sit voluptate</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="team-container --box-width">
@@ -125,7 +150,7 @@
             <ul class="person-container-list">
                 <li class="person-container-list__item">
                     <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="150"
-                            height="150">
+                        height="150">
                     <span class="person-container-list__name">Sed ut perspiciatis</span>
                     <span class="person-container-list__text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur
                         aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
@@ -133,7 +158,7 @@
                 </li>
                 <li class="person-container-list__item">
                     <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="150"
-                            height="150">
+                        height="150">
                     <span class="person-container-list__name">Sed ut perspiciatis</span>
                     <span class="person-container-list__text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur
                         aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
@@ -141,7 +166,7 @@
                 </li>
                 <li class="person-container-list__item">
                     <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="150"
-                            height="150">
+                        height="150">
                     <span class="person-container-list__name">Sed ut perspiciatis</span>
                     <span class="person-container-list__text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur
                         aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
@@ -149,7 +174,7 @@
                 </li>
                 <li class="person-container-list__item">
                     <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="150"
-                            height="150">
+                        height="150">
                     <span class="person-container-list__name">Sed ut perspiciatis</span>
                     <span class="person-container-list__text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur
                         aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
@@ -157,7 +182,7 @@
                 </li>
                 <li class="person-container-list__item">
                     <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="150"
-                            height="150">
+                        height="150">
                     <span class="person-container-list__name">Sed ut perspiciatis</span>
                     <span class="person-container-list__text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur
                         aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
@@ -165,7 +190,7 @@
                 </li>
                 <li class="person-container-list__item">
                     <img class="img-sample" src="../web/images/logo-welder-corp.png" alt="sample" width="150"
-                            height="150">
+                        height="150">
                     <span class="person-container-list__name">Sed ut perspiciatis</span>
                     <span class="person-container-list__text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur
                         aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</span>
