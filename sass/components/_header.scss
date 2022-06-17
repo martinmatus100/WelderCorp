@@ -1,0 +1,20 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: $color-black;
+}
+
+/*  DESKTOP  */
+@media (min-width: $desktop-width) {
+    header {
+        .nav-list-container .nav-list-container__item .nav-list-container__lnk .img-sample {
+            display: none;
+        }
+    
+        .nav-container {
+            padding: 0;
+        }
+    }
+}
