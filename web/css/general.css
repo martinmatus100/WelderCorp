@@ -158,12 +158,6 @@ header {
     position: relative;
 }
 
-/* .main-slider .main-slider-text {
-    position: absolute;
-    top: 25%;
-    margin: 0 10px;
-} */
-
 .services-container-list {
     padding: 0;
     display: grid;
@@ -358,28 +352,6 @@ body.page-contact-us .contact-container #form_contact {
     border-color: #FF019A;
 }
 
-/* #form_contact input[type="text"],
-#form_contact input[type="email"],
-#form_contact input[type="number"],
-#form_contact select {
-    height: 30px;
-    border-radius: 15px;
-    margin: 10px 0;
-    padding: 2px 10px;
-    border: none;
-    box-sizing: content-box;
-    background: #FFFFFF;
-}
-
-#form_contact textarea {
-    border-radius: 15px;
-    margin: 10px 0;
-    padding: 2px 10px;
-    border: none;
-    box-sizing: content-box;
-    background: #FFFFFF;
-} */
-
 .btn {
     background-color: #060b0f;
     border: 2px solid #290CFF;
@@ -475,7 +447,7 @@ footer .footer-social-links .nav-list-container {
 
 
 /*  DESKTOP  */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .--box-width {
         max-width: 1280px;
     }
@@ -560,23 +532,6 @@ footer .footer-social-links .nav-list-container {
     .banner-bottom img {
         width: 100%;
     }
-
-    /* .main-slider .main-slider-text {
-        position: absolute;
-        top: 25%;
-    }
-
-    .main-slider .main-slider-text.right {
-        right: 10%;
-    }
-
-    .main-slider .main-slider-text.left {
-        left: 10%;
-    }
-
-    .main-slider .main-slider-text.center {
-        left: 36%;
-    } */
 
     .box-container {
         flex-direction: row;
