@@ -118,6 +118,13 @@
     gap: 20px;
     text-align: center; }
 
+.nav-container-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .nav-container-mobile .nav-list-container__logo-mobile {
+    margin: 10px; }
+
 /*  DESKTOP  */
 @media (min-width: 1024px) {
   .--box-width {
@@ -158,6 +165,23 @@ header {
   width: 100%;
   z-index: 10;
   background: #060b0f; }
+
+.btn-menu {
+  margin: 15px 10px;
+  padding: 10px;
+  display: flex; }
+
+.offcanvas.show {
+  background: #060b0f; }
+
+.offcanvas-header .btn-close {
+  filter: invert(1); }
+
+.offcanvas-body .nav-list-container {
+  flex-direction: column;
+  text-align: left; }
+  .offcanvas-body .nav-list-container .nav-list-container__item .nav-list-container__lnk {
+    font-size: 20px; }
 
 /*  DESKTOP  */
 @media (min-width: 1024px) {

@@ -159,6 +159,16 @@
     }
 }
 
+.nav-container-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .nav-list-container__logo-mobile {
+        margin: 10px;
+    }
+}
+
 
 /*  DESKTOP  */
 @media (min-width: $desktop-width) {
