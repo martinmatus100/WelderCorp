@@ -1,0 +1,88 @@
+@import './variables';
+@import './mixin';
+@import './components/header';
+@import './components/footer';
+@import './pages/home';
+@import './pages/contacto';
+@import './pages/nosotros';
+@import './pages/services';
+
+body {
+    font-family: $font-family;
+    margin: 0;
+    background: $color-black;
+    color: $color-white;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.--box-width {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 10px;
+}
+
+.box-blue {
+    border: 3px solid $color-blue;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.box-pink {
+    border: 3px solid $color-pink;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.box-white {
+    border: 3px solid $color-white;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.--blue-text,
+.--hover-blue-text:hover {
+    color: $color-blue;
+}
+
+.--pink-text,
+.--hover-pink-text:hover {
+    color: $color-pink;
+}
+
+.--white-text,
+.--hover-white-text:hover {
+    color: $color-white;
+}
+
+.btn {
+    background-color: $color-black;
+    border: 2px solid $color-blue;
+    border-radius: 15px;
+    color: $color-pink;
+    font-size: 20px;
+    font-weight: 700;
+    height: 40px;
+    font-family: $font-family;
+    text-transform: uppercase;
+}
+
+/*  MOBILE  */
+@media (max-width: $mobile-width) {
+    .mobile-hide {
+        display: none !important;
+    }
+}
+
+/*  DESKTOP  */
+@media (min-width: $desktop-width) {
+    .desktop-hide {
+        display: none !important;
+    }
+}

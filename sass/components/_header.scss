@@ -1,0 +1,47 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: $color-black;
+}
+
+.btn-menu {
+    margin: 15px 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.offcanvas.show {
+    background: $color-black;
+}
+
+.offcanvas-header {
+    .btn-close {
+        filter: invert(1);
+    }
+}
+
+.offcanvas-body {
+    .nav-list-container {
+        flex-direction: column;
+        text-align: left;
+
+        .nav-list-container__item .nav-list-container__lnk {
+            font-size: 20px;
+        }
+    }
+}
+
+/*  DESKTOP  */
+@media (min-width: $desktop-width) {
+    header {
+        .nav-list-container .nav-list-container__item .nav-list-container__lnk .img-sample {
+            display: none;
+        }
+    
+        .nav-container {
+            padding: 0;
+        }
+    }
+}
