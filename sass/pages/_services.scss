@@ -9,12 +9,9 @@
     gap: 40px;
 
     .services-container-list__item {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @include flex-column-spaceBetween;
         gap: 20px;
         justify-items: center;
-        align-items: center;
 
         span {
             text-align: center;
@@ -23,9 +20,7 @@
 }
 
 .service-container-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex-column-spaceBetween;
     text-align: center;
 
     .--img {

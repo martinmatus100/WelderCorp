@@ -1,3 +1,5 @@
+@import './mixins';
+
 .nav-container,
 .footer-container {
     max-width: $max-width;
@@ -10,26 +12,17 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    @include flex-row-spaceBetween;
 
     .nav-list-container__item {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
+        @include flex-center;
 
         .nav-list-container__lnk {
             text-transform: uppercase;
             font-weight: bold;
             text-decoration: none;
             font-size: 8px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
+            @include flex-column;
             gap: 5px;
             position: relative;
 
@@ -90,12 +83,10 @@
 }
 
 .box-container {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
 
     .--text {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
     }
 
     &.--prod .--text {
@@ -123,14 +114,12 @@
 
 .box-container-info-list {
     gap: 40px;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     padding: 0 30px;
     margin: 40px 0;
 
     .box-container-info-list__item {
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         flex-wrap: nowrap;
         justify-content: flex-start;
         gap: 15px;
@@ -145,14 +134,12 @@
 
 .person-container-list {
     padding: 0;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 60px;
     margin-top: 60px;
 
     .person-container-list__item {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: center;
         gap: 20px;
         text-align: center;
@@ -160,9 +147,7 @@
 }
 
 .nav-container-mobile {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex-row-spaceBetween;
 
     .nav-list-container__logo-mobile {
         margin: 10px;
@@ -173,7 +158,7 @@
 /*  DESKTOP  */
 @media (min-width: $desktop-width) {
     .--box-width {
-        max-width: $max-width;
+        max-width: $max-width !important;
     }
 
     .--full-width {

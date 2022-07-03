@@ -30,24 +30,18 @@ footer {
         filter: invert(1);
     }
 
-    .ico-yt:before {
-        content: url('../../web/images/ico_yt.svg');
-    }
+    $redes: (
+        yt: url('../../web/images/ico_yt.svg'),
+        tt: url('../../web/images/ico_tt.svg'),
+        ig: url('../../web/images/ico_ig.svg'),
+        tw: url('../../web/images/ico_tw.svg'),
+        fb: url('../../web/images/ico_fb.svg')
+    );
 
-    .ico-tt:before {
-        content: url('../../web/images/ico_tt.svg');
-    }
-
-    .ico-ig:before {
-        content: url('../../web/images/ico_ig.svg');
-    }
-
-    .ico-tw:before {
-        content: url('../../web/images/ico_tw.svg');
-    }
-
-    .ico-fb:before {
-        content: url('../../web/images/ico_fb.svg');
+    @each $red, $content in $redes {
+        .ico-#{$red}:before {
+            content: $content;
+        }
     }
 
     .footer-links__logo {

@@ -25,8 +25,6 @@
       font-size: 8px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
       gap: 5px;
       position: relative; }
       .nav-list-container .nav-list-container__item .nav-list-container__lnk:before {
@@ -121,6 +119,7 @@
 .nav-container-mobile {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between; }
   .nav-container-mobile .nav-list-container__logo-mobile {
     margin: 10px; }
@@ -128,7 +127,7 @@
 /*  DESKTOP  */
 @media (min-width: 1024px) {
   .--box-width {
-    max-width: 1280px; }
+    max-width: 1280px !important; }
   .--full-width {
     margin: 0 auto; }
   .main-container .main-slider img {
@@ -349,9 +348,9 @@ body.page-contact-us #form_contact .input-group-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     gap: 20px;
-    justify-items: center;
-    align-items: center; }
+    justify-items: center; }
     .services-container-list .services-container-list__item span {
       text-align: center; }
 
@@ -359,6 +358,7 @@ body.page-contact-us #form_contact .input-group-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   text-align: center; }
   .service-container-card .--img {
     display: flex;
@@ -412,20 +412,20 @@ ul {
   margin: 0 auto;
   padding: 50px 10px; }
 
-.box-blue {
-  border: 3px solid #290CFF;
+.borders, .box-blue, .box-pink, .box-white {
+  border-width: 3px;
+  border-style: solid;
   border-radius: 15px;
   padding: 30px; }
+
+.box-blue {
+  border-color: #290CFF; }
 
 .box-pink {
-  border: 3px solid #FF019A;
-  border-radius: 15px;
-  padding: 30px; }
+  border-color: #FF019A; }
 
 .box-white {
-  border: 3px solid #FFFFFF;
-  border-radius: 15px;
-  padding: 30px; }
+  border-color: #FFFFFF; }
 
 .--blue-text,
 .--hover-blue-text:hover {
@@ -441,14 +441,14 @@ ul {
 
 .btn {
   background-color: #060b0f;
-  border: 2px solid #290CFF;
   border-radius: 15px;
-  color: #FF019A;
   font-size: 20px;
   font-weight: 700;
   height: 40px;
   font-family: "Play", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border: 2px solid #290CFF;
+  color: #FF019A; }
 
 /*  MOBILE  */
 @media (max-width: 728px) {

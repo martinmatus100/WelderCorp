@@ -1,5 +1,6 @@
 @import './variables';
-@import './mixin';
+@import './containers';
+@import './mixins';
 @import './components/header';
 @import './components/footer';
 @import './pages/home';
@@ -28,22 +29,26 @@ ul {
     padding: 50px 10px;
 }
 
-.box-blue {
-    border: 3px solid $color-blue;
+.borders {
+    border-width: 3px;
+    border-style: solid;
     border-radius: 15px;
     padding: 30px;
+}
+
+.box-blue {
+    @extend .borders;
+    border-color: $color-blue;
 }
 
 .box-pink {
-    border: 3px solid $color-pink;
-    border-radius: 15px;
-    padding: 30px;
+    @extend .borders;
+    border-color: $color-pink;
 }
 
 .box-white {
-    border: 3px solid $color-white;
-    border-radius: 15px;
-    padding: 30px;
+    @extend .borders;
+    border-color: $color-white;
 }
 
 .--blue-text,
@@ -61,16 +66,26 @@ ul {
     color: $color-white;
 }
 
+$botons : (
+    background: $color-black,
+    radius: 15px,
+    fontSize: 20px,
+    fontWeight: 700,
+    height: 40px,
+    fontFamily: $font-family,
+    textTransform: uppercase
+);
+
 .btn {
-    background-color: $color-black;
+    background-color: map-get($map: $botons, $key: background);
+    border-radius: map-get($map: $botons, $key: radius);
+    font-size: map-get($map: $botons, $key: fontSize);
+    font-weight: map-get($map: $botons, $key: fontWeight);
+    height: map-get($map: $botons, $key: height);
+    font-family: map-get($map: $botons, $key: fontFamily);
+    text-transform: map-get($map: $botons, $key: textTransform);
     border: 2px solid $color-blue;
-    border-radius: 15px;
     color: $color-pink;
-    font-size: 20px;
-    font-weight: 700;
-    height: 40px;
-    font-family: $font-family;
-    text-transform: uppercase;
 }
 
 /*  MOBILE  */

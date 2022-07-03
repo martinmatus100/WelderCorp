@@ -4,8 +4,7 @@ body.page-contact-us {
     }
 
     .contact-container #form_contact {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         gap: 15px;
     }
 
@@ -15,8 +14,7 @@ body.page-contact-us {
 
     #form_contact {
         .field-contact {
-            display: flex;
-            flex-direction: column;
+            @include flex-column;
         }
 
         .input-group-text {
