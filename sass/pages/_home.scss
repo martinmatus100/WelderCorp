@@ -12,12 +12,41 @@ body.page-home header {
         justify-items: center;
         justify-content: center;
         align-content: center;
+
+        li {
+            display: flex;
+            align-items: center;
+            align-content: center;
+        }
     }
 }
 
 .banner-bottom img {
     max-width: 100%;
     max-height: 400px;
+}
+
+ul.services-container-list {
+    li.services-container-list__item {
+        .services-container-list__ico {
+            font-size: 60px;
+        }
+
+        span {
+            font-size: 20px;
+            max-width: 200px;
+        }
+    }
+}
+
+.parallax {
+    background-image: url("../../web/images/home-parallax.jpg");
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
 }
 
 /*  DESKTOP  */
