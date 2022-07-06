@@ -143,6 +143,24 @@
         align-items: center;
         gap: 20px;
         text-align: center;
+        flex-basis: 100%;
+
+        i {
+            font-size: 145px;
+            border-radius: 50%;
+        }
+        
+        i.--border-pink {
+            border: 5px solid $color-pink;
+        }
+
+        i.--border-blue {
+            border: 5px solid $color-blue;
+        }
+
+        .person-container-list__name {
+            font-weight: 700;
+        }
     }
 }
 
